@@ -22,9 +22,9 @@ function App() {
       <h1 className="text-xl font-bold mb-4">Q3 Financial Overview</h1>
 
       <div className="mb-4 space-x-2">
-        <button onClick={() => console.log('Import')} className="bg-blue-500 text-white px-3 py-1 rounded">Import</button>
-        <button onClick={() => console.log('Export')} className="bg-blue-500 text-white px-3 py-1 rounded">Export</button>
-        <button onClick={() => console.log('New Action')} className="bg-green-500 text-white px-3 py-1 rounded">New Action</button>
+        <button onClick={() => alert('Import clicked')} className="bg-blue-500 text-white px-3 py-1 rounded">Import</button>
+        <button onClick={() => alert('Export clicked')} className="bg-blue-500 text-white px-3 py-1 rounded">Export</button>
+        <button onClick={() => alert('New Action clicked')} className="bg-green-500 text-white px-3 py-1 rounded">New Action</button>
       </div>
 
       <table {...getTableProps()} className="w-full border text-sm">
@@ -76,9 +76,9 @@ function App() {
       </table>
 
       <div className="mt-4 space-x-2">
-        <button onClick={() => console.log('All Orders')} className="bg-gray-200 px-3 py-1 rounded">All Orders</button>
-        <button onClick={() => console.log('Pending')} className="bg-gray-200 px-3 py-1 rounded">Pending</button>
-        <button onClick={() => console.log('Reviewed')} className="bg-gray-200 px-3 py-1 rounded">Reviewed</button>
+        <button onClick={() => alert('All Orders clicked')} className="bg-gray-200 px-3 py-1 rounded">All Orders</button>
+        <button onClick={() => alert('Pending clicked')} className="bg-gray-200 px-3 py-1 rounded">Pending</button>
+        <button onClick={() => alert('Reviewed clicked')} className="bg-gray-200 px-3 py-1 rounded">Reviewed</button>
       </div>
     </div>
   );
